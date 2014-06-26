@@ -113,7 +113,6 @@ class Plugin(plugins.Plugin):
         self.poll = None
 
     def onchatmessage(self, user, message):
-        if message and message.startswith("#"):
-            message = message.strip()
+        if message and message.startswith("#") and not ' ' in message:
             self.poll.vote(user, message)
             self.view.setchoices(self.poll.choices())
