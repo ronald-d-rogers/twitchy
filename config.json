@@ -1,0 +1,11 @@
+{
+  "twitch_id": "",
+  "services": {
+    "chat": {
+      "login": {
+        "id": "twitchy_bot",
+        "oauth": "oauth:4xsxitag88x5o98u9bw5siagnx0dg05"
+      }
+    }
+  }
+}
